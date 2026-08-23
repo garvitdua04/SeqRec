@@ -78,11 +78,7 @@ Aggregate metrics don't show *why* one model beats another — a sample of 5 hel
 - Full-ranking evaluation is capped at 5,000 users (not the full ~96k test set) for tractability; standard error on the reported metrics is roughly ±0.2-0.4 percentage points.
 - No hyperparameter search was performed (temperature, lambda_cl, hidden size are fixed at reasonable defaults, not tuned).
 
-## How to reproduce
 
-1. Open the notebook in Google Colab with a GPU runtime (T4 or better).
-2. Run all cells top to bottom. Full run (data download, embedding extraction, 3-seed training of 4 models + ablation) takes several hours on a T4.
-3. Results are saved to `results.csv` and `ablation_results.csv`; plots to `training_curves.png` and `full_rank_comparison.png`.
 
 ## Stack
 
